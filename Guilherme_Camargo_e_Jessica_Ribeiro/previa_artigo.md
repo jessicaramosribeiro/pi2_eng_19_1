@@ -11,14 +11,14 @@ A Indústria 4.0 é considerada como a Quarta Revolução Industrial. A primeira
 
 #### Quadro 1
 
-| Delimitadores Tecnológicos      | Tecnologias     | Quantidade(s)       |
-| --------------------------------|-----------------|---------------------|
-|Verificação do Rótulos (OCR)     |Em análise       |                     |
-|Temperatura                      |MLX90614         | 1                   |
-|Cor                              |TSC 3200         | 1                   |
-|Ultrassônico                     |JSN-SR04T        | 1                   |
-|Posição                          |TCRT5000         | 4                   |
-|LCD                              |HD44780          | 1                   |
+| Delimitadores Tecnológicos      | Tecnologias     | Quantidade(s)       |   Motivo da escolha       |
+| --------------------------------|-----------------|---------------------|---------------------------|
+|Verificação do Rótulos (OCR)     |Em análise       |                     |                           |
+|Temperatura                      |MLX90614         | 1                   | Sem contato com o líquido |
+|Cor                              |TSC 3200         | 1                   |                           |
+|Ultrassônico                     |JSN-SR04T        | 1                   | Dimensões físicas         |
+|Posição                          |TCRT5000         | 4                   | Custo / benefício         |
+|LCD                              |HD44780          | 1                   |                           |
 
 Para a realização do projeto foram utilizados os sensores listados acima. Cada um deles possui sua importância. Os sensores de posição verificam a posição da garrafa ao longo de todo o processo. O sensor de cor verifica se a cor do líquido dentro da garrafa está normal. O sensor ultrassônico é utilizado para a verificação da altura do líquido dentro da garrafa, calculando assim o volume total de líquido dentro da mesma. Por fim, o leitor OCR verifica validade e lote da garrafa! Como critério de escolha de cada sensor, foi pesquisado a lista de sensores disponíveis no laboratório. Para o sensor ultrassônico, por exemplo, haviam dois sensores disponíveis sendo um deles com diâmetro menor do que o diâmetro da  garrafa a qual será utilizada no projeto e o outro sua dimensão ultrapassa a da garrafa. O sensor ultrassônico escolhido foi o JSN-SR04T devido suas dimensões serem compatíveis para a garrafa.
 Para todas as verificações que forem positivas, o processo continuará de onde estava. Porém quando a mesma obtiver um valor fora do esperado, a garrafa será retirada do processo e a próxima garrafa iniciará o processo do início.
